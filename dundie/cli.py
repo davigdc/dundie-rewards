@@ -1,5 +1,4 @@
 import argparse
-from .core import load
 
 
 def main():

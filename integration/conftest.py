@@ -3,7 +3,7 @@ unit: Mark unit tests
 integration: Mark integration tests
 high: High Priority
 medium: Medium Priority
-low: Low Priority 
+low: Low Priority
 """
 
 
