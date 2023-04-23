@@ -1,6 +1,7 @@
 import re
 import smtplib
 from email.mime.text import MIMEText
+
 from dundie.settings import SMTP_HOST, SMTP_PORT, SMTP_TIMEOUT
 from dundie.utils.log import get_logger
 
@@ -17,7 +18,7 @@ def check_valid_email(address):
 def send_email(from_, to, subject, text):
     """Envia email."""
     if not isinstance(to, list):
-        raise ValueError("to must be a list")
+        to = [to]
 
     try:
         with smtplib.SMTP(
