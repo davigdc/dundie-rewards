@@ -1,6 +1,5 @@
 .PHONY: install virtualenv ipython clean test pflake8
 
-
 install:
 	@echo "Installing for dev environment"
 	@.venv/bin/python -m pip install -e '.[dev]'
@@ -8,7 +7,6 @@ install:
 
 virtualenv:
 	@.venv/bin/python -m pip -m venv .venv
-
 
 ipython:
 	@.venv/bin/ipython
@@ -23,13 +21,9 @@ fmt:
 test:
 	@.venv/bin/pytest -s --forked
 
-testci:
-	@pytest --forked -v --junitxml=test-result.xml
-
 watch:
 	# @.venv/bin/ptw
 	@ls **/*.py | entr pytest --forked
-
 
 clean:            ## Clean unused files.
 	@find ./ -name '*.pyc' -exec rm -f {} \;
