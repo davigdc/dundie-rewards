@@ -17,9 +17,9 @@
         }
     },
     "balance": {
-        "jim@dundlermifflin.com": 500,
-        "schrute@dundlermifflin.com": 100,
-        "glewis@dundlermifflin.com": 500
+        "jim@dundlermifflin.com": 680,
+        "schrute@dundlermifflin.com": 280,
+        "glewis@dundlermifflin.com": 550
     },
     "movement": {
         "jim@dundlermifflin.com": [
@@ -27,6 +27,21 @@
                 "date": "2023-04-23T10:55:12.968875",
                 "actor": "system",
                 "value": 500
+            },
+            {
+                "date": "2023-04-25T08:01:53.336006",
+                "actor": "davigdc",
+                "value": 30
+            },
+            {
+                "date": "2023-04-25T08:02:05.330495",
+                "actor": "davigdc",
+                "value": 300
+            },
+            {
+                "date": "2023-04-25T08:12:13.370060",
+                "actor": "davigdc",
+                "value": -150
             }
         ],
         "schrute@dundlermifflin.com": [
@@ -34,6 +49,21 @@
                 "date": "2023-04-23T10:55:12.970072",
                 "actor": "system",
                 "value": 100
+            },
+            {
+                "date": "2023-04-25T08:01:53.336014",
+                "actor": "davigdc",
+                "value": 30
+            },
+            {
+                "date": "2023-04-25T08:02:05.330503",
+                "actor": "davigdc",
+                "value": 300
+            },
+            {
+                "date": "2023-04-25T08:12:13.370069",
+                "actor": "davigdc",
+                "value": -150
             }
         ],
         "glewis@dundlermifflin.com": [
@@ -41,6 +71,11 @@
                 "date": "2023-04-23T10:58:09.452705",
                 "actor": "system",
                 "value": 500
+            },
+            {
+                "date": "2023-04-25T08:11:05.156831",
+                "actor": "davigdc",
+                "value": 50
             }
         ]
     },

@@ -24,7 +24,7 @@ test:
 	@.venv/bin/pytest -s --forked
 
 testci:
-	@pytest -v --junitxml=test-result.xml
+	@pytest --forked -v --junitxml=test-result.xml
 
 watch:
 	# @.venv/bin/ptw
