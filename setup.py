@@ -20,7 +20,7 @@ def read_requirements(path):
     return [
         line.strip()
         for line in read(path).split("\n")
-        if not line.startswith(("#", "git+", '"', '-'))
+        if not line.startswith(("#", "git+", '"', "-"))
     ]
 
 
@@ -33,14 +33,10 @@ setup(
     author="Davi Carmo",
     python_requires=">=3.8",
     packages=find_packages(),
-    entry_points={
-        "console_scripts": [
-            "dundie = dundie.__main__:main"
-        ]
-    },
-    install_required=read_requirements("requirements.txt"),
+    entry_points={"console_scripts": ["dundie = dundie.__main__:main"]},
+    install_requires=read_requirements("requirements.txt"),
     extras_require={
         "test": read_requirements("requirements.test.txt"),
-        "dev": read_requirements("requirements.dev.txt")
-    }
+        "dev": read_requirements("requirements.dev.txt"),
+    },
 )
